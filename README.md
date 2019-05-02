@@ -4,5 +4,3 @@
 2. Retrieve Data from the API and bind it to your article pages
 3. Add the routing to make your application dynamic.
 4. Add the ability to expand the thumbnail video and auto play.
-
-- Google Timer Started at 3:25pm for 3 hours.

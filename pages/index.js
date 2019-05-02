@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import TextBody from '../components/TextBody';
 import fetch from 'isomorphic-unfetch';
+import MainImage from '../components/MainImage';
 
   
   HelloWorld.getInitialProps = async ({ req }) => {
@@ -18,27 +19,26 @@ import fetch from 'isomorphic-unfetch';
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
         </Head>
-       
-        <p>scoped!</p>
+        <section className="gallery">
+          <MainImage images={articles[0].images}/>
+        </section>
         <TextBody/>
         <style jsx>{`
           p {
-            color: blue;
             font-family: 'Open Sans', sans-serif;
-
           }
           div {
-            background: red;
+           
           }
           @media (max-width: 600px) {
             div {
-              background: blue;
+              
             }
           }
         `}</style>
         <style global jsx>{`
           body {
-            background: black;
+            padding: 20px;
           }
         `}</style>
       </div>

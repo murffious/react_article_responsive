@@ -1,7 +1,3 @@
-
-
-
-
 function TextBody() {
     return (
       <div>
@@ -18,22 +14,22 @@ function TextBody() {
                 </p>
         <style jsx>{`
           p {
-            color: blue;
+           
             font-family: 'Open Sans', sans-serif;
 
           }
           div {
-            background: red;
+            
           }
           @media (max-width: 600px) {
             div {
-              background: blue;
+          
             }
           }
         `}</style>
         <style global jsx>{`
           body {
-            background: black;
+           
           }
         `}</style>
       </div>
