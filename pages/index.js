@@ -1,18 +1,26 @@
-// function Home() {
-//     return <div>Welcome to Next.js!</div>;
-//   }
-  
-//   export default Home;
 import Head from 'next/head';
+import TextBody from '../components/TextBody';
+import fetch from 'isomorphic-unfetch';
 
-  function HelloWorld() {
+  
+  HelloWorld.getInitialProps = async ({ req }) => {
+    const res = await fetch('https://interview-project-17987.herokuapp.com/api/article');
+    const json = await res.json();
+    return { articles: json };
+  };
+  
+  function HelloWorld({ articles }) {
+    console.log(articles)
     return (
       <div>
          <Head>
+           <title>LDS Article Page</title>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
         </Head>
-        Hello world
+       
         <p>scoped!</p>
+        <TextBody/>
         <style jsx>{`
           p {
             color: blue;
