@@ -3,15 +3,21 @@
 //   }
   
 //   export default Home;
+import Head from 'next/head';
 
   function HelloWorld() {
     return (
       <div>
+         <Head>
+          <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
+        </Head>
         Hello world
         <p>scoped!</p>
         <style jsx>{`
           p {
             color: blue;
+            font-family: 'Open Sans', sans-serif;
+
           }
           div {
             background: red;

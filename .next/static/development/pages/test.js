@@ -2996,6 +2996,9 @@ function () {
 //       <Head>
 //         <title>My page title</title>
 //         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+{}
+/* <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"></link> */
 //       </Head>
 //       <p>Hello world!</p>
 //     </div>
@@ -3005,7 +3008,7 @@ function () {
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!**********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Ftest&absolutePagePath=%2FUsers%2Fpaulmurff%2FCodeProjects%2Finterviews%2Fldschurch-webdev%2Fpages%2Ftest.js ***!
   \**********************************************************************************************************************************************************/
@@ -3028,5 +3031,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=test.js.map
