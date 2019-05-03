@@ -12,6 +12,7 @@ function MainImage(props) {
             <div className="thumbnails">
                 {images.map(thumb => (
                     <img
+                    // put a good key in here
                     key={thumb}
                     src={`https://${thumb.thumbnailUrl}`}
                     alt={thumb}

@@ -5,14 +5,15 @@ import MainImage from '../components/MainImage';
 import Video from '../components/Video';
 
   
-  HelloWorld.getInitialProps = async ({ req }) => {
+  App.getInitialProps = async ({ req }) => {
     const res = await fetch('https://interview-project-17987.herokuapp.com/api/article');
     const json = await res.json();
     return { articles: json };
   };
   
-  function HelloWorld({ articles }) {
+  function App({ articles }) {
     console.log(articles)
+    // For routing move all this to Main and pass through router
     return (
       <div>
          <Head>
@@ -20,6 +21,7 @@ import Video from '../components/Video';
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
         </Head>
+        <h1>{articles[0].title}</h1>
         <section className="gallery">
           <MainImage images={articles[0].images}/>
         </section>
@@ -47,4 +49,4 @@ import Video from '../components/Video';
     );
   }
   
-  export default HelloWorld;
+  export default App;
