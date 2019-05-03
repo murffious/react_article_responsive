@@ -48,7 +48,10 @@ function App({ articles }) {
       <Video video={articles[0].video} />
       <style jsx>{`
         .site-container {
-          padding-right: 45%;
+          padding-right: 15%;
+        }
+        .site-container h1{
+          font-size: 1.2em;
         }
         p {
           font-family: "Open Sans", sans-serif;
@@ -63,6 +66,7 @@ function App({ articles }) {
       <style global jsx>{`
         body {
           padding: 20px;
+          font-family: "Open Sans", sans-serif;
         }
       `}</style>
     </div>

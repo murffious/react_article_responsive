@@ -6,10 +6,10 @@ function TextBody(props) {
       <div>
          {content.map(p => {
             if(p.subtitle){
-                return <div><h3>{p.subtitle}</h3> <p>{p.text}</p></div>;
+                return <div key={p.subtitle + new Date().getTime()}><h3>{p.subtitle}</h3> <p>{p.text}</p></div>;
             } 
             else{
-                return <p>{p.text}</p>;
+                return <p key={p.subtitle + new Date().getTime()}>{p.text}</p>;
             }
          })}
         
