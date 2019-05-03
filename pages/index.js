@@ -23,7 +23,7 @@ import Video from '../components/Video';
         <section className="gallery">
           <MainImage images={articles[0].images}/>
         </section>
-        <TextBody/>
+        <TextBody content={articles[0].content}/>
         <Video video={articles[0].video}/>
         <style jsx>{`
           p {
