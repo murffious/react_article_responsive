@@ -7,8 +7,8 @@ function MainImage(props) {
     return (
         <div class="img-contianer">
             <img width="100%" src={`https://${images[0].mainUrl}`} alt="main image" />
-            <h1>Title</h1>
-            <h4>Desrptions</h4>
+            <h1>{images[0].title}</h1>
+            <h4>{images[0].description}</h4>
             <div className="thumbnails">
                 {images.map(thumb => (
                     <img

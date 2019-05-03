@@ -2,6 +2,7 @@ import Head from 'next/head';
 import TextBody from '../components/TextBody';
 import fetch from 'isomorphic-unfetch';
 import MainImage from '../components/MainImage';
+import Video from '../components/Video';
 
   
   HelloWorld.getInitialProps = async ({ req }) => {
@@ -23,6 +24,7 @@ import MainImage from '../components/MainImage';
           <MainImage images={articles[0].images}/>
         </section>
         <TextBody/>
+        <Video video={articles[0].video}/>
         <style jsx>{`
           p {
             font-family: 'Open Sans', sans-serif;
