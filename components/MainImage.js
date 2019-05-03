@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 const Slide = ({ image }) => {
-    const styles = {
-      backgroundImage: `url(${image})`,
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: '50% 60%'
-    }
-    return <div className="slide" style={styles}></div>
-  }
+  const styles = {
+    backgroundImage: `url(${image})`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "50% 60%"
+  };
+  return <div className="slide" style={styles} />;
+};
 function MainImage(props) {
   const { images } = props;
   const [img, setImg] = useState(images[0].mainUrl);
@@ -51,18 +51,14 @@ function MainImage(props) {
           .crop {
             width: 100%;
             height: 100%;
-           
-           
           }
           .crop img {
             width: 100%;
             height: 100%;
             max-height: 500px;
           }
-        
-    
+
           .img-container {
-            
           }
           .img-border {
             border: 4px solid black;
@@ -73,22 +69,22 @@ function MainImage(props) {
           .image-detail {
             display: flex;
             flex-direction: column;
-            width :40%;
+            width: 40%;
           }
           .image-detail h1 {
             order: 1;
-            font-size: .9em;
+            font-size: 0.9em;
           }
           .image-detail h4 {
             order: 2;
-            font-size: .7em;
+            font-size: 0.7em;
           }
           .img-detail-wrapper {
             display: flex;
-            vertical-align: middle;  
+            vertical-align: middle;
           }
           .thumbnails {
-            max-width:45%;
+            max-width: 45%;
             display: flex;
             padding-left: 22px;
           }

@@ -1,21 +1,21 @@
-import React from 'react';
+import React from "react";
 // Video.expandVideo = video => () => {
-    
+
 // }
 
 const Video = ({ selectedVideo }) => {
-//   if (!selectedVideo) {
-//     return <div>Loading...</div>;
-//   }
+  //   if (!selectedVideo) {
+  //     return <div>Loading...</div>;
+  //   }
 
   const videoSrc = `https://www.youtube.com/embed/0J-_f4oRuWI`;
 
-//   const { description, title } = selectedVideo.snippet;
+  //   const { description, title } = selectedVideo.snippet;
 
   return (
     <div>
       <div className="ui embed">
-        <iframe  src={videoSrc} frameBorder="0" />
+        <iframe src={videoSrc} frameBorder="0" />
       </div>
       <div className="ui segment">
         {/* <h4 className="ui header">{title}</h4> */}

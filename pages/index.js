@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import TextBody from "../components/TextBody";
 import fetch from "isomorphic-unfetch";
@@ -27,7 +27,6 @@ App.getInitialProps = async ({ req, query }) => {
 };
 
 function App({ articles }) {
-
   console.log(articles);
   // For routing move all this to Main and pass through router
   return (
@@ -50,7 +49,7 @@ function App({ articles }) {
         .site-container {
           padding-right: 15%;
         }
-        .site-container h1{
+        .site-container h1 {
           font-size: 1.2em;
         }
         p {
