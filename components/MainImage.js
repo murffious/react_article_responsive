@@ -8,14 +8,16 @@ function MainImage(props) {
 
     return (
         <div class="img-contianer">
-            <img width="100%" src={`https://${img}`} alt={description} />
+            <div className="crop">
+              <img className="slider-image"  src={`https://${img}`} alt={description} />
+            </div>   
             <h1>{title}</h1>
             <h4>{description}</h4>
             <div className="thumbnails">
                 {images.map(image => (
                     <img
                     // put a good key in here
-                    className={img === image.mainUrl ?`img-border`: null}
+                    className={img === image.mainUrl ?`img-border`: `img-hover`}
                     key={image.description}
                     src={`https://${image.thumbnailUrl}`}
                     alt={image.description}
@@ -28,13 +30,26 @@ function MainImage(props) {
                 ))}
                 </div>
             <style jsx>{`
+                .crop {
+                    height: 300px;
+                    width: 400px;
+                    overflow: hidden;
+                }
+                .crop img {
+                    height: 100%;
+                    width: auto;
+                }
                 .img-container {
                     display: flex;
                     font-family: 'Open Sans', sans-serif;
                 }
                 .img-border {
                     border: 4px solid black; 
+                    
                 }
+                .img-hover:hover {
+                    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+                  }
                 .thumbnails {
                     max-width: 75px;
                     display: flex;
